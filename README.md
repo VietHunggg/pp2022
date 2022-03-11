@@ -10,4 +10,4 @@ Student Info
 =========================
 
 * Student Name: Nguyễn Việt Hưng
-* Student ID: BI11_103
+* Student ID: BI11-103
