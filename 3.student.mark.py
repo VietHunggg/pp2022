@@ -93,3 +93,4 @@ while True:
         tpmNparr = np.array(tpm)
         tpmArr = np.average(tpmNparr)
         print(f"GPA of student {tpmID}: {tpmArr}")
+        #holaaaaaaaaaaaaaaaaaaaa
