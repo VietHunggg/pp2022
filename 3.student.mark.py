@@ -47,8 +47,6 @@ class Student:
                 for j in range(tpmMark.__len__()):
                     tpmarr.append(tpmMark[j]["Mark"])
 
-
-
 course_lst = []
 stu_lst = []
 st = Student(0,"","",{})

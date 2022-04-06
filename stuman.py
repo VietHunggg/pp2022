@@ -60,6 +60,3 @@ while True:
         tpm_id = int(input("Enter your ID of student: "))
         tpm_cour_id = int(input("Enter ID of course: "))
         show_mark(tpm_id, tpm_cour_id)
-
-
-
