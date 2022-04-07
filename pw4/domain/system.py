@@ -33,10 +33,10 @@ class System():
 
     def avgGPA(self, tpmarr, studentID):
         for i in range(self.stu_lst.__len__()):
-            if self.stu_lst[i].Ids == studentID:
+            if self.stu_lst[i].IDs == studentID:
                 tpmMark = self.stu_lst[i].mark
                 for j in range(tpmMark.__len__()):
-                    tpmarr.append(tpmarr[j]["Mark"])
+                    tpmarr.append(tpmMark[j]["Mark"])
         tpmNparr = np.array(tpmarr)
         stu_GPA = np.average(tpmNparr)
         print(f"GPA of student {studentID}: {stu_GPA}")
