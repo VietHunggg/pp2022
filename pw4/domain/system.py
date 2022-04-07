@@ -2,8 +2,6 @@ import numpy as np
 from domain.student import *
 from domain.course import *
 
-stu_lst = []
-cour_lst = []
 class System():
     
     def __init__(self, stu_lst, cour_lst):
@@ -23,7 +21,6 @@ class System():
                     return True
     
     def AddStudent(self):
-        global stu_lst
         tpmID = int(input("Enter student ID - (Syntax only number): "))
         tpmName = str(input("Enter student name: "))
         tpmDob = str(input("Enter student's DoB: "))
@@ -48,13 +45,12 @@ class System():
     def show_stu(self):
         for i in range(self.stu_lst.__len__()):
             print("ID: ", self.stu_lst[i].IDs)
-            print("Name: ", self.stu_lst[i].Name)
+            print("Name: ", self.stu_lst[i].names)
             print("DoB: ", self.stu_lst[i].dob)
             print("Mark: ", self.stu_lst[i].mark)
             print("\n")
     
     def Addcourse(self):
-        global cour_lst
         tpmID = int(input("Enter course ID: "))
         tpmSub = str(input("Enter name of course: "))
         cr = Courses(tpmID, tpmSub)
@@ -62,4 +58,5 @@ class System():
     
     def show_cour(self):
         for i in range(self.cour_lst.__len__()):
-            print(self.cour_lst[i])
+            print("\nCourse ID: ", self.cour_lst[i].get_id())
+            print("Course Name: ", self.cour_lst[i].get_name())

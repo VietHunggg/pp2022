@@ -18,7 +18,7 @@ def main():
         if choice == 1:
             init.AddStudent()
         if choice == 2:
-            init.AddCourse()
+            init.Addcourse()
         if choice == 3:
             init.show_stu()
         if choice == 4:
@@ -33,9 +33,7 @@ def main():
             tpmID = int(input("Enter the student ID to check GPA: "))
             if init.check_valid_stu(tpmID) == True:
                 init.avgGPA(tpmarr, tpmID)
-        else:
-            exit()
-    return
+
 
 if __name__ == "__main__":
     main()
